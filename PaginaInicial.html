@@ -1,138 +1,173 @@
-
-<!DOCTYPE html>
-<!-- saved from url=(0048)file:///C:/Users/User/Desktop/PaginaInicial.html -->
+<!doctype html>
 <html lang="pt=br">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <meta charset="uft=8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PaginaInicial</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/15735688-fundo-de-contraste-cinza-preto-vermelho-design-moderno-para-papel-de-parede-banner-flyer-em-estilo-geometrico-vetor.jpg');
-                background-size: cover; 
-                background-position: center; 
-                background-attachment: fixed; 
-                height: 100vh; 
-            }
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><meta charset="uft=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+       <title>PaginaInicial</title>
+       <style>
+        body {
+            background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/15735688-fundo-de-contraste-cinza-preto-vermelho-design-moderno-para-papel-de-parede-banner-flyer-em-estilo-geometrico-vetor.jpg');
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            height: 100vh; 
+            display: flex;
+        }
        
         
-            .conteudo {
-                padding: 20px;
-                color: rgb(245, 13, 13);
-                text-align: center;
-            }
-            .caixa {
-                border: 2px solid #fdfdfd;
-                padding: 5px;
-                width: 400px; 
-                background-color: #faf9f9; 
-                position: relative; 
-                top: 50px; 
-                left: 50%; 
-                transform: translate(-50%, -50%); 
-                border-radius: 20px; 
-                font-family: Arial, sans-serif;
-                text-align: center;    
-                margin: 5em;
-            }
-            .navitem{
-                width:4em;
-                height:auto;
-                position-anchor:auto;
-                position: center;
-                display: auto-flow;
-                color: #515151;
-                stroke: black;
-                font-family: sans-serif;
-                border: 10px;
-                border-radius: 5px;
-                border-style: solid;
-                border-color: black;
-                text-wrap: nowrap;
-                background-color: #ffffff;
-            }
-            .navb{
-                position: fixed;
-                align-items: center;
-                display: flex;
-                gap: 170px;
-            }
-            a{
-                text-decoration-line: none;
-            }
-            #sbar{
-                background-color: #eeeeee;
-                border: darkgray 3px;
-                border-radius: 4px;
-                overflow: hidden;     
-            }
-            .destaques{
-                display: flex;
-                grid: auto;
-                gap: 3px;
-            }
-            .link-centralizado {
-                font-family: Arial, sans-serif; 
-                font-size: 20px; 
-                color: rgb(80, 183, 224); 
-                text-decoration: none; 
-                position: absolute; 
-                top: 50%; 
-                left: 50%; 
-                transform: translate(-50%, 120%); 
-                z-index: 1;
-            }
-            .link-centralizado a:hover {
-                color: rgb(245, 242, 242);
-            }
-        </style>
-    </head>
-    <body>
-        <nav>
-            <div class="navb">
-                <a href="file:///C:/Users/User/Desktop/PaginaInicial.html">
-                    <img src="./PaginaInicial_files/Gamers Media.png" class="navitem">
-                </a>
-                <a href="file:///C:/Users/User/Desktop/PaginaInicial.html">
-                    <span class="navitem">ARTIGOS</span>
-                </a>    
-                <a href="file:///C:/Users/User/Desktop/PaginaInicial.html">
-                    <span class="navitem">NOTÍCIAS</span>
-                </a>
-                <a href="file:///C:/Users/User/Desktop/PaginaInicial.html">
-                    <span class="navitem">EM ALTA</span>
-                </a>
-                <a href="file:///C:/Users/User/Desktop/PaginaInicial.html">
-                    <span class="navitem">CONTA</span>
-                </a>
-            </div>      
-        </nav>
-        <br>
-        <br>
-        <div class="caixa" style="margin-top: 50px;">
-        <input type="text" name="sbar" id="sbar" placeholder="&#128269;" size="50">
-        </div>
-        <div class="destaques">
-            <img src="./PaginaInicial_files/images" alt="Exemplo de Imagem" class="slide">
-            <img src="./PaginaInicial_files/images" alt="Exemplo de Imagem" class="slide"><img src="./PaginaInicial_files/images" alt="Exemplo de Imagem" class="slide"><img src="./PaginaInicial_files/images" alt="Exemplo de Imagem" class="slide"><img src="./PaginaInicial_files/images" alt="Exemplo de Imagem" class="slide"><img src="./PaginaInicial_files/images" alt="Exemplo de Imagem" class="slide">
-            </div><!--ajustar o html e o js para fazer as imagens se moverem quando o ponteiro do mouse passar por cima-->
-        <script>
-            let mov = 5;
-            let slideID;
-            slideMove();
-            function slideMove() {
-            slides = document.getElementsByClassName("slide");
-            slide(50, 50, mouseX, mouseY);
-            }
-            if (){
+        .conteudo {
+            padding: 20px;
+            color: rgb(245, 13, 13);
+            text-align: center;
+        }
+    
+        .caixa {
+        border: 2px solid #fdfdfd;
+        padding: 5px;
+        width: 400px; 
+        background-color: #faf9f9; 
+        position: relative; 
+        border-radius: 20px; 
+        font-family: Arial, sans-serif;
+        text-align: center;    
+        margin: 50px;
+            
+        }
+    .navitem{
+        width:4em;
+        height:auto;
+        position-anchor:auto;
+        position: center;
+        display: auto-flow;
+        color: #515151;
+        stroke: black;
+        font-family: sans-serif;
+        border: 10px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: black;
+        text-wrap: nowrap;
+        background-color: #ffffff;
         
-         }
-        </script>
-        <div class="link-centralizado">
-            <a href="https://www.playstation.com/pt-br/ps5/"><h2>Clique aqui para saber mais</h2></a>
-        </div>
-    </body>
-</html>
+        
+        
+    }
+    .navb{
+        position: fixed;
+        align-items: center;
+        display: flex;
+        gap: 170px;
+        background-color: rgb(200, 200, 100);
+        margin-bottom: 40px;
+    }
+     a{
+    text-decoration-line: none;
+}
+    #sbar{
+        background-color: #eeeeee;
+        border: darkgray 3px;
+        border-radius: 4px;
+       overflow: hidden; 
+        
+    }
+    .destaques{
+        margin: 60px;
+        position: relative;
+        display: flex;
+        grid: auto;
+        gap: 3px;
+        background-color: red;
+    }
+    nav{
+        position: relative;
+        margin: 10px;
+        background-color: blue;
+    }
+    
+    </style>
+    
+</head>
+<body>
+<nav>
+    <div class="navb">
+        <a href="file:///C:/Users/User/Desktop/PaginaInicial.html">
+            <img src="./PaginaInicial_files/Gamers Media.png" class="navitem">
+        </a>
+        <a href="file:///C:/Users/User/Desktop/PaginaInicial.html">
+            <span class="navitem">ARTIGOS</span>
+        </a><a href="file:///C:/Users/User/Desktop/PaginaInicial.html">
+            <span class="navitem">NOTÍCIAS</span>
+        </a>
+    <a href="file:///C:/Users/User/Desktop/PaginaInicial.html">
+            <span class="navitem">EM ALTA</span>
+        </a>
+    <a href="file:///C:/Users/User/Desktop/PaginaInicial.html">
+            <span class="navitem">CONTA</span>
+        </a>
+    
+    </div>
+        
+</nav>
+
+
+<div class="caixa"><input type="text" name="sbar" id="sbar" placeholder="🔍" size="50">
+    
+    
+</div>
+
+
+
+
+
+
+<div class="destaques">
+    
+    <img src="./PaginaInicial_files/images" alt="Exemplo de Imagem" class="slide">
+    <img src="./PaginaInicial_files/images" alt="Exemplo de Imagem" class="slide"><img src="./PaginaInicial_files/images" alt="Exemplo de Imagem" class="slide"><img src="./PaginaInicial_files/images" alt="Exemplo de Imagem" class="slide"><img src="./PaginaInicial_files/images" alt="Exemplo de Imagem" class="slide"><img src="./PaginaInicial_files/images" alt="Exemplo de Imagem" class="slide">
+    
+</div><!--ajustar o html e o js para fazer as imagens se moverem quando o ponteiro do mouse passar por cima-->
+<script>
+    let mov = 5;
+    let slideID;
+    slideMove();
+    function slideMove() {
+        slides = document.getElementsByClassName("slide");
+        slide(50, 50, mouseX, mouseY);
+    }
+    if (){
+        
+    }
+</script>
+
+
+<style>
+    .link-centralizado {
+        font-family: Arial, sans-serif; 
+        font-size: 20px; 
+        color: rgb(80, 183, 224); 
+        text-decoration: none; 
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, 120%); 
+        z-index: 1;     }
+
+        .link-centralizado a:hover {
+        color: rgb(245, 242, 242);     }
+</style>
+
+
+
+
+<div class="link-centralizado">
+    <a href="https://www.playstation.com/pt-br/ps5/"><h2>Clique aqui para saber mais</h2></a>
+</div>
+
+
+
+
+
+
+
+</body></html>
